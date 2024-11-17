@@ -186,7 +186,7 @@ export default function TransferPage() {
                   </div>
 
                   <div>
-                    <label className="block mb-2 text-green-400 font-medium">Amount (KAIA)</label>
+                    <label className="block mb-2 text-green-400 font-medium">Amount (ETH)</label>
                     <input
                       type="number"
                       value={amount}

@@ -297,7 +297,7 @@ export default function SavingsPotsPage() {
                     </div>
 
                     <div>
-                      <label className="block mb-2 text-green-400 font-medium">Target Amount (KAIA)</label>
+                      <label className="block mb-2 text-green-400 font-medium">Target Amount (ETH)</label>
                       <input
                         type="number"
                         value={targetAmount}
@@ -493,7 +493,7 @@ const PotCard: React.FC<PotCardProps> = ({ pot, onContribute, onBreak, isLoading
           <div className="flex justify-between mt-2 text-sm">
             <span className="text-gray-400">{Math.round(progress)}% saved</span>
             <span className="text-green-400 font-medium">
-              {formatAmount(pot.currentAmount)} / {formatAmount(pot.targetAmount)} KAIA
+              {formatAmount(pot.currentAmount)} / {formatAmount(pot.targetAmount)} ETH
             </span>
           </div>
         </div>
@@ -518,7 +518,7 @@ const PotCard: React.FC<PotCardProps> = ({ pot, onContribute, onBreak, isLoading
                   value={amount}
                   onChange={(e) => setAmount(e.target.value)}
                   className="w-full px-4 py-3 rounded-xl bg-black/50 border border-green-500/20 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500/40 transition-all duration-200"
-                  placeholder="Amount in KAIA"
+                  placeholder="Amount in ETH"
                   step="0.000000000000000001"
                 />
                 <div className="flex space-x-3">

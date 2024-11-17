@@ -306,7 +306,7 @@ export default function ClaimPage() {
                                 <div className="flex justify-between items-start mb-3">
                                   <div>
                                     <div className="text-sm text-gray-400 mb-1">From: {transfer.sender}</div>
-                                    <div className="text-green-400 font-semibold">{transfer.amount} KAIA</div>
+                                    <div className="text-green-400 font-semibold">{transfer.amount} ETH</div>
                                   </div>
                                   <motion.button
                                     onClick={() => handleQuickClaim(transfer.id)}
