@@ -1,137 +1,7 @@
 import { ethers } from 'ethers';
 
-const contractAddress = '0xE2E93Bb6E08e82e290780f6a85a6a9a549CDE879';
+const contractAddress = '0xbAA8ab9851BF6dDd914870088F8B43d102F8eA7d';
 const contractABI = [
-	{
-		"inputs": [
-			{
-				"internalType": "bytes32",
-				"name": "_potId",
-				"type": "bytes32"
-			}
-		],
-		"name": "breakPot",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "_senderAddress",
-				"type": "address"
-			}
-		],
-		"name": "claimTransferByAddress",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "bytes32",
-				"name": "_transferId",
-				"type": "bytes32"
-			}
-		],
-		"name": "claimTransferById",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "string",
-				"name": "_senderUsername",
-				"type": "string"
-			}
-		],
-		"name": "claimTransferByUsername",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "bytes32",
-				"name": "_paymentId",
-				"type": "bytes32"
-			}
-		],
-		"name": "contributeToGroupPayment",
-		"outputs": [],
-		"stateMutability": "payable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "bytes32",
-				"name": "_potId",
-				"type": "bytes32"
-			}
-		],
-		"name": "contributeToSavingsPot",
-		"outputs": [],
-		"stateMutability": "payable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "_recipient",
-				"type": "address"
-			},
-			{
-				"internalType": "uint256",
-				"name": "_numParticipants",
-				"type": "uint256"
-			},
-			{
-				"internalType": "string",
-				"name": "_remarks",
-				"type": "string"
-			}
-		],
-		"name": "createGroupPayment",
-		"outputs": [],
-		"stateMutability": "payable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "string",
-				"name": "_name",
-				"type": "string"
-			},
-			{
-				"internalType": "uint256",
-				"name": "_targetAmount",
-				"type": "uint256"
-			},
-			{
-				"internalType": "string",
-				"name": "_remarks",
-				"type": "string"
-			}
-		],
-		"name": "createSavingsPot",
-		"outputs": [
-			{
-				"internalType": "bytes32",
-				"name": "",
-				"type": "bytes32"
-			}
-		],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
 	{
 		"anonymous": false,
 		"inputs": [
@@ -276,32 +146,6 @@ const contractABI = [
 		"type": "event"
 	},
 	{
-		"inputs": [
-			{
-				"internalType": "bytes32",
-				"name": "_transferId",
-				"type": "bytes32"
-			}
-		],
-		"name": "refundTransfer",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "string",
-				"name": "_username",
-				"type": "string"
-			}
-		],
-		"name": "registerUsername",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
 		"anonymous": false,
 		"inputs": [
 			{
@@ -337,42 +181,6 @@ const contractABI = [
 		],
 		"name": "SavingsPotCreated",
 		"type": "event"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "_recipient",
-				"type": "address"
-			},
-			{
-				"internalType": "string",
-				"name": "_remarks",
-				"type": "string"
-			}
-		],
-		"name": "sendToAddress",
-		"outputs": [],
-		"stateMutability": "payable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "string",
-				"name": "_username",
-				"type": "string"
-			},
-			{
-				"internalType": "string",
-				"name": "_remarks",
-				"type": "string"
-			}
-		],
-		"name": "sendToUsername",
-		"outputs": [],
-		"stateMutability": "payable",
-		"type": "function"
 	},
 	{
 		"anonymous": false,
@@ -479,6 +287,136 @@ const contractABI = [
 		],
 		"name": "UserRegistered",
 		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "_potId",
+				"type": "bytes32"
+			}
+		],
+		"name": "breakPot",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_senderAddress",
+				"type": "address"
+			}
+		],
+		"name": "claimTransferByAddress",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "_transferId",
+				"type": "bytes32"
+			}
+		],
+		"name": "claimTransferById",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_senderUsername",
+				"type": "string"
+			}
+		],
+		"name": "claimTransferByUsername",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "_paymentId",
+				"type": "bytes32"
+			}
+		],
+		"name": "contributeToGroupPayment",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "_potId",
+				"type": "bytes32"
+			}
+		],
+		"name": "contributeToSavingsPot",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_recipient",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_numParticipants",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_remarks",
+				"type": "string"
+			}
+		],
+		"name": "createGroupPayment",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_name",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_targetAmount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_remarks",
+				"type": "string"
+			}
+		],
+		"name": "createSavingsPot",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
 	},
 	{
 		"inputs": [
@@ -919,6 +857,32 @@ const contractABI = [
 		"inputs": [
 			{
 				"internalType": "bytes32",
+				"name": "_transferId",
+				"type": "bytes32"
+			}
+		],
+		"name": "refundTransfer",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_username",
+				"type": "string"
+			}
+		],
+		"name": "registerUsername",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
 				"name": "",
 				"type": "bytes32"
 			}
@@ -967,6 +931,42 @@ const contractABI = [
 			}
 		],
 		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_recipient",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "_remarks",
+				"type": "string"
+			}
+		],
+		"name": "sendToAddress",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_username",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_remarks",
+				"type": "string"
+			}
+		],
+		"name": "sendToUsername",
+		"outputs": [],
+		"stateMutability": "payable",
 		"type": "function"
 	},
 	{
