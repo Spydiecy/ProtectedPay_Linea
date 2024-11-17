@@ -124,7 +124,7 @@ const Hero = () => {
           className="text-3xl md:text-4xl mb-12 text-gray-300 max-w-3xl mx-auto font-light"
           variants={fadeIn}
         >
-          Secure Crypto Transfers, Group Payments, and Smart Savings on NeoX
+          Secure Crypto Transfers, Group Payments, and Smart Savings on Taiko
         </motion.p>
 
         <motion.div 
@@ -504,7 +504,7 @@ const CallToAction = () => (
           className="text-xl mb-12 text-gray-300"
           variants={fadeIn}
         >
-          Experience secure transfers, group payments, and smart savings on the NeoX blockchain.
+          Experience secure transfers, group payments, and smart savings on the Taiko blockchain.
         </motion.p>
 
         <motion.div

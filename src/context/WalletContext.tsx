@@ -51,13 +51,13 @@ export const WalletProvider: React.FC<WalletProviderProps> = ({ children }) => {
         await window.ethereum.request({ method: 'eth_requestAccounts' });
         const provider = new ethers.providers.Web3Provider(window.ethereum);
         
-        // Check if we're on the correct network (NeoX testnet)
+        // Check if we're on the correct network (Taiko testnet)
         const network = await provider.getNetwork();
-        if (network.chainId !== 12227332) { // NeoX testnet chain ID
+        if (network.chainId !== 1001) { // Taiko testnet chain ID
           try {
             await window.ethereum.request({
               method: 'wallet_switchEthereumChain',
-              params: [{ chainId: '0xBA9304' }], // 12227332 in hexadecimal
+              params: [{ chainId: '0x3E9' }], // 1001 in hexadecimal
             });
           } catch (switchError) {
             // Ensure switchError is an object with a code property
@@ -68,15 +68,15 @@ export const WalletProvider: React.FC<WalletProviderProps> = ({ children }) => {
                 await window.ethereum.request({
                   method: 'wallet_addEthereumChain',
                   params: [{
-                    chainId: '0xBA9304',
-                    chainName: 'NeoX Testnet',
+                    chainId: '0x3E9',
+                    chainName: 'Taiko Testnet',
                     nativeCurrency: {
-                      name: 'GAS',
-                      symbol: 'GAS',
+                      name: 'KAIA',
+                      symbol: 'KAIA',
                       decimals: 18
                     },
-                    rpcUrls: ['https://neoxt4seed1.ngd.network/'],
-                    blockExplorerUrls: ['https://xt4scan.ngd.network/']
+                    rpcUrls: ['https://kaia-kairos.blockpi.network/v1/rpc/public/'],
+                    blockExplorerUrls: ['https://kairos.kaiascope.com/']
                   }],
                 });
               } else {

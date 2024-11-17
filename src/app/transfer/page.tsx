@@ -130,7 +130,7 @@ export default function TransferPage() {
           </h1>
           
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Send funds securely to any address or username on the NeoX network
+            Send funds securely to any address or username on the Taiko network
           </p>
         </motion.div>
 
@@ -186,7 +186,7 @@ export default function TransferPage() {
                   </div>
 
                   <div>
-                    <label className="block mb-2 text-green-400 font-medium">Amount (GAS)</label>
+                    <label className="block mb-2 text-green-400 font-medium">Amount (KAIA)</label>
                     <input
                       type="number"
                       value={amount}

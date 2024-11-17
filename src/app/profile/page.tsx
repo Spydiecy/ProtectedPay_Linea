@@ -357,7 +357,7 @@ export default function ProfilePage() {
           </div>
           <div className="text-right">
             <p className="text-sm text-gray-400">Amount</p>
-            <p className="text-green-400 font-semibold">{transfer.amount} GAS</p>
+            <p className="text-green-400 font-semibold">{transfer.amount} KAIA</p>
           </div>
         </div>
         {transfer.remarks && (
@@ -405,7 +405,7 @@ export default function ProfilePage() {
             <div className="text-right">
               <p className="text-sm text-gray-400">Progress</p>
               <p className="text-green-400 font-semibold">
-                {payment.amountCollected} / {payment.totalAmount} GAS
+                {payment.amountCollected} / {payment.totalAmount} KAIA
               </p>
             </div>
           </div>
@@ -420,7 +420,7 @@ export default function ProfilePage() {
           </div>
 
           <div className="flex items-center justify-between text-sm text-gray-400 mb-3">
-            <span>Per Person: {payment.amountPerPerson} GAS</span>
+            <span>Per Person: {payment.amountPerPerson} KAIA</span>
             <span>{payment.numParticipants} participants</span>
           </div>
 
@@ -463,11 +463,11 @@ const SavingsPotCard: React.FC<SavingsPotCardProps> = ({ pot }) => {
         <div className="flex justify-between items-start mb-3">
           <div>
             <h3 className="text-green-400 font-semibold mb-1">{pot.name}</h3>
-            <p className="text-sm text-gray-400">Target: {pot.targetAmount} GAS</p>
+            <p className="text-sm text-gray-400">Target: {pot.targetAmount} KAIA</p>
           </div>
           <div className="text-right">
             <p className="text-sm text-gray-400">Saved</p>
-            <p className="text-green-400 font-semibold">{pot.currentAmount} GAS</p>
+            <p className="text-green-400 font-semibold">{pot.currentAmount} KAIA</p>
           </div>
         </div>
 
@@ -539,7 +539,7 @@ const SavingsPotCard: React.FC<SavingsPotCardProps> = ({ pot }) => {
           <StatsCard
             icon={<WalletIcon className="w-6 h-6" />}
             label="Current Balance"
-            value={`${balance || '0'} GAS`}
+            value={`${balance || '0'} KAIA`}
           />
           <StatsCard
             icon={<ArrowUpIcon className="w-6 h-6" />}

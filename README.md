@@ -1,6 +1,6 @@
 # ProtectedPay
 
-ProtectedPay is a comprehensive DeFi platform on the NeoX blockchain that provides secure transfers, group payments, and smart savings features. Built with advanced security and user experience in mind, it offers multiple ways to manage and protect your crypto assets.
+ProtectedPay is a comprehensive DeFi platform on the Taiko blockchain that provides secure transfers, group payments, and smart savings features. Built with advanced security and user experience in mind, it offers multiple ways to manage and protect your crypto assets.
 
 ![image](https://github.com/user-attachments/assets/ea8a2e94-dad2-48cd-af7f-88e08d0e37a8)
 
@@ -89,9 +89,9 @@ Watch ProtectedPay in action:
 
 ## Smart Contract
 
-Deployed on NeoX:
+Deployed on Taiko:
 - Contract Address: 0xF93132d75c20EfeD556EC2Bc5aC777750665D3a9
-- Verified on NeoX Explorer
+- Verified on Taiko Explorer
 
 ## Support
 
@@ -101,4 +101,4 @@ For questions or issues:
 
 ---
 
-ProtectedPay - Secure Transfers, Group Payments, and Smart Savings on NeoX
+ProtectedPay - Secure Transfers, Group Payments, and Smart Savings on Taiko

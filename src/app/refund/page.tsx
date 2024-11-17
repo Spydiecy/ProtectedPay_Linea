@@ -299,7 +299,7 @@ export default function RefundPage() {
                               <div className="flex justify-between items-start mb-3">
                                 <div>
                                   <div className="text-sm text-gray-400 mb-1">To: {transfer.recipient}</div>
-                                  <div className="text-green-400 font-semibold">{transfer.amount} GAS</div>
+                                  <div className="text-green-400 font-semibold">{transfer.amount} KAIA</div>
                                 </div>
                                 <motion.button
                                   onClick={() => handleRefund(transfer.id)}
