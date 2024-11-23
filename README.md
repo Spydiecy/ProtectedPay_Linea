@@ -58,7 +58,7 @@ ProtectedPay is a comprehensive DeFi platform on the Linea blockchain that provi
 
 ## User Interface
 
-![image](https://github.com/user-attachments/assets/db1aeac5-b3e7-4eff-95b5-b3e0ee964d55)
+![image](https://github.com/user-attachments/assets/994989ba-b098-4c10-8034-54595548c4ed)
 
 ### Modern Design
 - Dark theme with neon accents
@@ -90,7 +90,7 @@ Watch ProtectedPay in action:
 ## Smart Contract
 
 Deployed on Linea:
-- Contract Address: 0xCa36dD890F987EDcE1D6D7C74Fb9df627c216BF6
+- Contract Address: 0x756F971D1C603f297Ad1020BAf96021a3D9F7AE6
 - Verified on Linea Explorer
 
 ## Support
