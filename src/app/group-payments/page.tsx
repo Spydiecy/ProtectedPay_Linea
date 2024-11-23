@@ -284,7 +284,7 @@ export default function GroupPaymentsPage() {
                   </div>
 
                   <div>
-                    <label className="block mb-2 text-green-400">Total Amount (ETH)</label>
+                    <label className="block mb-2 text-green-400">Total Amount (LineaETH)</label>
                     <input
                       type="number"
                       value={amount}
@@ -408,7 +408,7 @@ export default function GroupPaymentsPage() {
                     </div>
 
                     <div>
-                      <label className="block mb-2 text-green-400">Amount (ETH)</label>
+                      <label className="block mb-2 text-green-400">Amount (LineaETH)</label>
                       <input
                         type="number"
                         value={amount}
@@ -696,7 +696,7 @@ const PaymentCard: React.FC<PaymentCardProps> = ({
           <div className="flex justify-between mt-2 text-sm">
             <span className="text-gray-400">{Math.round(progress)}% funded</span>
             <span className="text-green-400 font-medium">
-              {formatAmount(payment.amountCollected)} / {formatAmount(payment.totalAmount)} ETH
+              {formatAmount(payment.amountCollected)} / {formatAmount(payment.totalAmount)} LineaETH
             </span>
           </div>
         </div>
@@ -724,7 +724,7 @@ const PaymentCard: React.FC<PaymentCardProps> = ({
               ) : (
                 <>
                   <CheckCircleIcon className="w-5 h-5" />
-                  <span>Contribute {formatAmount(payment.amountPerPerson)} ETH</span>
+                  <span>Contribute {formatAmount(payment.amountPerPerson)} LineaETH</span>
                 </>
               )}
             </motion.button>

@@ -1,6 +1,6 @@
 # ProtectedPay
 
-ProtectedPay is a comprehensive DeFi platform on the Taiko blockchain that provides secure transfers, group payments, and smart savings features. Built with advanced security and user experience in mind, it offers multiple ways to manage and protect your crypto assets.
+ProtectedPay is a comprehensive DeFi platform on the Linea blockchain that provides secure transfers, group payments, and smart savings features. Built with advanced security and user experience in mind, it offers multiple ways to manage and protect your crypto assets.
 
 ![image](https://github.com/user-attachments/assets/407d37a4-f4bc-42a2-9a0b-f96e2b632166)
 
@@ -89,9 +89,9 @@ Watch ProtectedPay in action:
 
 ## Smart Contract
 
-Deployed on Taiko:
+Deployed on Linea:
 - Contract Address: 0xCa36dD890F987EDcE1D6D7C74Fb9df627c216BF6
-- Verified on Taiko Explorer
+- Verified on Linea Explorer
 
 ## Support
 
@@ -101,4 +101,4 @@ For questions or issues:
 
 ---
 
-ProtectedPay - Secure Transfers, Group Payments, and Smart Savings on Taiko
+ProtectedPay - Secure Transfers, Group Payments, and Smart Savings on Linea
