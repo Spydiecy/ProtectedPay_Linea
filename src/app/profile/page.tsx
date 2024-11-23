@@ -539,7 +539,7 @@ const SavingsPotCard: React.FC<SavingsPotCardProps> = ({ pot }) => {
           <StatsCard
             icon={<WalletIcon className="w-6 h-6" />}
             label="Current Balance"
-            value={`${balance || '0'} LineaETH`}
+            value={`${(parseFloat(balance as string) || 0).toFixed(4)} LineaETH`}
           />
           <StatsCard
             icon={<ArrowUpIcon className="w-6 h-6" />}
