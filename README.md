@@ -2,7 +2,7 @@
 
 ProtectedPay is a comprehensive DeFi platform on the Linea blockchain that provides secure transfers, group payments, and smart savings features. Built with advanced security and user experience in mind, it offers multiple ways to manage and protect your crypto assets.
 
-![image](https://github.com/user-attachments/assets/407d37a4-f4bc-42a2-9a0b-f96e2b632166)
+![image](https://github.com/user-attachments/assets/6fcc6010-719c-4037-ae5c-8ba9c9f17f84)
 
 ## Key Features
 
@@ -36,21 +36,21 @@ ProtectedPay is a comprehensive DeFi platform on the Linea blockchain that provi
 ## How It Works
 
 ### Secure Transfers
-![image](https://github.com/user-attachments/assets/a313e670-ec07-444a-931a-f1b4b0a0d674)
+![image](https://github.com/user-attachments/assets/4eb0b757-855d-4a98-842f-e8ca2983a74a)
 1. Send funds to username or address
 2. Add remarks for context
 3. Recipient claims funds
 4. Option to refund if unclaimed
 
 ### Group Payments
-![image](https://github.com/user-attachments/assets/a1616cae-5a1e-459f-b301-06d67942749c)
+![image](https://github.com/user-attachments/assets/a84caae6-25c1-467b-951a-624d7f504854)
 1. Create payment with target amount
 2. Set number of participants
 3. Members contribute their share
 4. Automatic distribution when complete
 
 ### Savings Pots
-![image](https://github.com/user-attachments/assets/84cd92eb-451e-4c8d-9336-4203b10da6f4)
+![image](https://github.com/user-attachments/assets/18ca74d0-29ce-42c0-ab41-c68caf29c565)
 1. Create pot with target amount
 2. Add funds progressively
 3. Track savings progress
@@ -58,7 +58,7 @@ ProtectedPay is a comprehensive DeFi platform on the Linea blockchain that provi
 
 ## User Interface
 
-![image](https://github.com/user-attachments/assets/994989ba-b098-4c10-8034-54595548c4ed)
+![image](https://github.com/user-attachments/assets/bde28684-640e-43e2-b522-e7f4cdb4a411)
 
 ### Modern Design
 - Dark theme with neon accents
