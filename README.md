@@ -85,7 +85,7 @@ ProtectedPay is a comprehensive DeFi platform on the Linea blockchain that provi
 ## Video Demo
 
 Watch ProtectedPay in action:
-[Demo Video](video_link)
+[Demo Video](https://youtu.be/pOx8iCx2cQg)
 
 ## Smart Contract
 
